@@ -1,7 +1,7 @@
 Octacoin integration/staging tree
 ================================
 
-http://www.octacoin.org
+https://www.octacoin.net
 
 Copyright (c) 2009-2014 Bitcoin Developers
 Copyright (c) 2011-2015 Octacoin Developers
