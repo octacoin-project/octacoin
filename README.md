@@ -4,22 +4,15 @@ Octacoin integration/staging tree
 http://www.octacoin.org
 
 Copyright (c) 2009-2014 Bitcoin Developers
-Copyright (c) 2011-2014 Octacoin Developers
+Copyright (c) 2011-2015 Octacoin Developers
 
 What is Octacoin?
 ----------------
 
 Octacoin is a lite version of Bitcoin using scrypt as a proof-of-work algorithm.
- - 2.5 minute block targets
- - subsidy halves in 840k blocks (~4 years)
- - ~84 million total coins
-
-The rest is the same as Bitcoin.
- - 50 coins per block
- - 2016 blocks to retarget difficulty
 
 For more information, as well as an immediately useable, binary version of
-the Octacoin client sofware, see http://www.octacoin.org.
+the Octacoin client sofware, see https://www.octacoin.net.
 
 License
 -------
@@ -67,7 +60,7 @@ Unit tests for the core code are in `src/test/`. To compile and run them:
 
 Unit tests for the GUI code are in `src/qt/test/`. To compile and run them:
 
-    qmake BITCOIN_QT_TEST=1 -o Makefile.test bitcoin-qt.pro
+    qmake BITCOIN_QT_TEST=1 -o Makefile.test octacoin-qt.pro
     make -f Makefile.test
     ./octacoin-qt_test
 
