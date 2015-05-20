@@ -1,0 +1,9 @@
+Building Octacoin
+
+See doc/readme-qt.rst for instructions on building Octacoin-Qt,
+the intended-for-end-users, nice-graphical-interface, reference
+implementation of Octacoin.
+
+See doc/build-*.txt for instructions on building octacoind,
+the intended-for-services, no-graphical-interface, reference
+implementation of Octacoin.
