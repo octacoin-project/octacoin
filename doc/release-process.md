@@ -41,7 +41,11 @@ Release Process
 	wget 'http://fukuchi.org/works/qrencode/qrencode-3.4.3.tar.bz2'
 	wget 'http://downloads.sourceforge.net/project/boost/boost/1.55.0/boost_1_55_0.tar.bz2'
 	wget 'http://download.qt-project.org/official_releases/qt/4.8/4.8.5/qt-everywhere-opensource-src-4.8.5.tar.gz'
+	wget 'https://svn.boost.org/trac/boost/raw-attachment/ticket/7262/boost-mingw.patch' -O boost-mingw-gas-cross-compile-2013-03-03.patch --no-check-certificate
+	wget 'http://miniupnp.free.fr/files/download.php?file=miniupnpc-1.9.20140401.tar.gz' -O miniupnpc-1.9.20140401.tar.gz
 	cd ..
+	bin/make-base-vm --suite precise --arch i386
+	bin/make-base-vm --suite precise --arch amd64
 	./bin/gbuild ../octacoin/contrib/gitian-descriptors/boost-win32.yml
 	mv build/out/boost-*.zip inputs/
 	./bin/gbuild ../octacoin/contrib/gitian-descriptors/deps-win32.yml
